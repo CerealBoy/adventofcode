@@ -20,7 +20,7 @@ var (
 		Year2019 year2019.Cmd `cmd help:"Year 2019 for the question."`
 		Year2020 year2020.Cmd `cmd help:"Year 2020 for the question."`
 
-		Input string `required help:"The input file to run." type:"path"`
+		Input string `required help:"The input file to run." type:"existingfile"`
 
 		Debug bool `help:"Enable debug mode."`
 	}
