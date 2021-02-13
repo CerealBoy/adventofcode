@@ -16,7 +16,7 @@ func init() {
 func day1(ctx *shared.Context) error {
 	d := []int{}
 
-	f, err := os.Open(ctx.Input)
+	f, err := os.Open(shared.File(2020, 1, ctx.Test))
 	if err != nil {
 		return err
 	}

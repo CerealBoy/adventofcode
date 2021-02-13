@@ -15,7 +15,7 @@ func init() {
 func day3(ctx *shared.Context) error {
 	hill := []string{}
 
-	f, err := os.Open(ctx.Input)
+	f, err := os.Open(shared.File(2020, 3, ctx.Test))
 	if err != nil {
 		return err
 	}

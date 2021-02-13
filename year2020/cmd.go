@@ -12,7 +12,7 @@ var (
 
 // Cmd defines the current year as a command, with any arguments.
 type Cmd struct {
-	Day int `cmd help:"Day of the year to run."`
+	Day int `help:"Day of the year to run."`
 }
 
 // Run will accept the context from the command and look to run the

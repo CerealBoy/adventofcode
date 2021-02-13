@@ -20,7 +20,7 @@ func day2(ctx *shared.Context) error {
 	first := 0
 	second := 0
 
-	f, err := os.Open(ctx.Input)
+	f, err := os.Open(shared.File(2020, 2, ctx.Test))
 	if err != nil {
 		return err
 	}

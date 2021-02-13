@@ -20,14 +20,13 @@ var (
 		Year2019 year2019.Cmd `cmd help:"Year 2019 for the question."`
 		Year2020 year2020.Cmd `cmd help:"Year 2020 for the question."`
 
-		Input string `required help:"The input file to run." type:"existingfile"`
-
-		Debug bool `help:"Enable debug mode."`
+		Debug bool `help:"Enable debug mode." short:"d"`
+		Test  bool `help:"Whether the test should be used." short:"t"`
 	}
 )
 
 func main() {
 	ctx := kong.Parse(&cli)
-	err := ctx.Run(&shared.Context{Debug: cli.Debug, Input: cli.Input})
+	err := ctx.Run(&shared.Context{Debug: cli.Debug, Test: cli.Test})
 	ctx.FatalIfErrorf(err)
 }
