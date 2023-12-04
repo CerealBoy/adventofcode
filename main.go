@@ -10,6 +10,7 @@ import (
 	"github.com/CerealBoy/adventofcode/year2020"
 	"github.com/CerealBoy/adventofcode/year2021"
 	"github.com/CerealBoy/adventofcode/year2022"
+	"github.com/CerealBoy/adventofcode/year2023"
 	"github.com/alecthomas/kong"
 )
 
@@ -23,6 +24,7 @@ var (
 		Year2020 year2020.Cmd `cmd help:"Year 2020 for the question."`
 		Year2021 year2021.Cmd `cmd help:"Year 2021 for the question."`
 		Year2022 year2022.Cmd `cmd help:"Year 2022 for the question."`
+		Year2023 year2023.Cmd `cmd help:"Year 2023 for the question."`
 
 		Debug bool `help:"Enable debug mode." short:"d"`
 		Test  bool `help:"Whether the test should be used." short:"t"`
