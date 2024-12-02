@@ -7,7 +7,8 @@ import (
 )
 
 var (
-	days = map[int]func(*shared.Context) error{}
+	days  = map[int]func(*shared.Context) error{}
+	debug = false
 )
 
 // Cmd defines the current year as a command, with any arguments.
