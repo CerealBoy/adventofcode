@@ -25,3 +25,4 @@ year: ; $(info $(C) adding new year...)
 	$(V)mkdir year20$(YEAR)
 	$(V)sed 's/{{YEAR}}/$(YEAR)/g' year.go.tmpl > "./year20${YEAR}/cmd.go"
 
+.PHONY: build

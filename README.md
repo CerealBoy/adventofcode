@@ -25,3 +25,22 @@ The ``--day ${DAY_NUMBER}`` will map to the input file and the algorithm applied
     $ adventofcode year-2019 --day 3 -t
       year2019/day3-test
 
+## languages
+
+This repo was originally a Go monorepo, however curiosity of other languages got the better of me so others have been added. Usage is below.
+
+### elixir
+
+Files are run individually, and there's no dynamic method (yet) to switch between test and actual input.
+
+```shell
+elixir year20${YEAR}/day${DAY}.exs
+```
+
+### gleam
+
+Gleam has a specific structure for the application, even though individual files are run similarly to Elixir. These are all within `src/`, and assumed to be run from the root directory.
+
+```shell
+gleam run -m year20${YEAR}/day${DAY}
+```
