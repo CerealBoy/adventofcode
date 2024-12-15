@@ -1,0 +1,18 @@
+defmodule AoC do
+  def read_file do
+    {:ok, d} = File.read("./year20{{YEAR}}/day{{DAY}}-test")
+    d
+  end
+
+  def part_one(file) do
+    file
+  end
+
+  def part_two(file) do
+    file
+  end
+end
+
+input = AoC.read_file
+IO.puts "Part 1: #{AoC.part_one(input)}"
+IO.puts "Part 2: #{AoC.part_two(input)}"
