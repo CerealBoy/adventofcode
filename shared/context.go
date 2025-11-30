@@ -1,3 +1,6 @@
+// Package shared contains any resources that are reusable across each
+// year and day, simplifying the code required and keeping each day
+// focused on solving the actual problem at hand.
 package shared
 
 import (
@@ -5,7 +8,7 @@ import (
 )
 
 const (
-	InvalidDay = "An invalid day was referenced for the year."
+	InvalidDay = "an invalid day was referenced for the year"
 )
 
 // Context procides a general and shared context to be used between all commands.

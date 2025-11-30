@@ -70,8 +70,6 @@ func day5(ctx *shared.Context) error {
 			}
 
 			first += p[(len(p)-1)/2]
-		} else {
-			//
 		}
 	}
 	fmt.Println("#1:", first)
@@ -105,9 +103,10 @@ func day5(ctx *shared.Context) error {
 func day5changePage(p, r []int) []int {
 	a, b := 0, 0
 	for idx, x := range p {
-		if x == r[1] {
+		switch x {
+		case r[1]:
 			a = idx
-		} else if x == r[0] {
+		case r[0]:
 			b = idx
 		}
 	}

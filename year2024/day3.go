@@ -35,11 +35,12 @@ func day3(ctx *shared.Context) error {
 
 		altMatch := alt.FindAllStringSubmatch(line, -1)
 		for _, x := range altMatch {
-			if x[0] == "do()" {
+			switch x[0] {
+			case "do()":
 				on = true
-			} else if x[0] == "don't()" {
+			case "don't()":
 				on = false
-			} else {
+			default:
 				if on {
 					a, _ := strconv.Atoi(x[1])
 					b, _ := strconv.Atoi(x[2])

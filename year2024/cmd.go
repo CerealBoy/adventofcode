@@ -1,3 +1,5 @@
+// Package year2024 contains all of the days solutions (that I've managed
+// to actually complete) that can be invoked via the CLI.
 package year2024
 
 import (
